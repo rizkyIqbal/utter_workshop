@@ -107,13 +107,11 @@ class _MyHomePageState extends State<MyHomePage> {
                               ],
                             ),
                           ),
-                          const Padding(
-                            padding: EdgeInsets.only(left: 100.0, bottom: 100),
-                            child: Icon(
-                              Icons.delete,
-                              color: Colors.red,
-                              size: 28.0,
-                            ),
+                          const Spacer(),
+                          const Icon(
+                            Icons.delete,
+                            color: Colors.red,
+                            size: 28.0,
                           ),
                         ],
                       ),
@@ -180,13 +178,11 @@ class _MyHomePageState extends State<MyHomePage> {
                               ],
                             ),
                           ),
-                          const Padding(
-                            padding: EdgeInsets.only(left: 100.0, bottom: 100),
-                            child: Icon(
-                              Icons.delete,
-                              color: Colors.red,
-                              size: 28.0,
-                            ),
+                          const Spacer(),
+                          const Icon(
+                            Icons.delete,
+                            color: Colors.red,
+                            size: 28.0,
                           ),
                         ],
                       ),
@@ -253,13 +249,11 @@ class _MyHomePageState extends State<MyHomePage> {
                               ],
                             ),
                           ),
-                          const Padding(
-                            padding: EdgeInsets.only(left: 100.0, bottom: 100),
-                            child: Icon(
-                              Icons.delete,
-                              color: Colors.red,
-                              size: 28.0,
-                            ),
+                          const Spacer(),
+                          const Icon(
+                            Icons.delete,
+                            color: Colors.red,
+                            size: 28.0,
                           ),
                         ],
                       ),
