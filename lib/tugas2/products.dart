@@ -1,25 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:utter_workshop/tugas2/addproducts.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
-
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
-
-  final String title;
+class ProductPage extends StatefulWidget {
+  const ProductPage({Key? key}) : super(key: key);
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<ProductPage> createState() => _ProductPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _ProductPageState extends State<ProductPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -109,7 +99,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                           const Spacer(),
                           const Icon(
-                            Icons.delete,
+                            Icons.delete_outlined,
                             color: Colors.red,
                             size: 28.0,
                           ),
@@ -180,7 +170,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                           const Spacer(),
                           const Icon(
-                            Icons.delete,
+                            Icons.delete_outlined,
                             color: Colors.red,
                             size: 28.0,
                           ),
@@ -251,7 +241,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                           const Spacer(),
                           const Icon(
-                            Icons.delete,
+                            Icons.delete_outlined,
                             color: Colors.red,
                             size: 28.0,
                           ),
@@ -262,7 +252,13 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           )),
       floatingActionButton: FloatingActionButton.extended(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const AddProduct(),
+              ));
+        },
         label: const Text('New Product'),
         icon: const Icon(Icons.shopping_bag_outlined),
         backgroundColor: Colors.blueAccent,
